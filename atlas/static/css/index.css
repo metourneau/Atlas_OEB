@@ -76,12 +76,19 @@ h4 {
 /*  font-size: 1.5rem;*/
 /*}*/
 
+/*OEB redmine-8544 MET  11/12/2020*/
+.text-muted-local {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 .title-spaced {
   letter-spacing: 0.025em;
   line-height: 38px;
 }
 
-.textIntroduction {
+div.textIntroduction {
   padding-left: 30px;
 }
 

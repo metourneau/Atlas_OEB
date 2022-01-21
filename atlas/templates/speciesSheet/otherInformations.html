@@ -46,8 +46,8 @@
                             {% for i in range (articles | length) %}
                                 <tr class="accordion-toggle" data-toggle="collapse" data-target=".moreInfo{{ i }}">
                                     <td> {% if articles[i].id_type == 3 %}
-                                        <span class="fas fa-link"> </span>
-                                    {% else %} <span class="fas fa-paperclip"> </span>
+                                        <span class="fa fa-link"> </span>
+                                    {% else %} <span class="fa fa-paperclip"> </span>
                                     {% endif %}
                                     </td>
 
@@ -59,7 +59,7 @@
                                         {{ articles[i].author }}
                                     </td>
                                     <td>
-                                        <i class="btn-more"> <span class="fas fa-chevron-down "> </span></i>
+                                        <i class="btn-more"> <span class="fa fa-chevron-down "> </span></i>
                                     </td>
 
                                 </tr>
@@ -142,7 +142,7 @@
                                         <h3><a class="badge badge-primary" href="{{ url_for('main.ficheOrganism', id_organism=o['id_organism']) }}"
                                             data-toggle="tooltip"  style="color: white;"
                                             title="{{ _('check.organism.sheet') }}" data-placement="left">
-                                         <i class="fas fa-list fa-fw"></i> {{ _('organism.sheet') }}</i>
+                                         <i class="fa fa-list fa-fw"></i> {{ _('organism.sheet') }}</i>
                                         </a></h3>
                                     </span>
                                     

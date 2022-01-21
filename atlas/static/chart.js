@@ -51,5 +51,6 @@ genericChart = function (element, labels, values) {
 var monthChartElement = document.getElementById('monthChart');
 const monthChart = genericChart(monthChartElement, months_name, getChartDatas(months_value, 'value'));
 
-var altiChartElement = document.getElementById('altiChart');
-const altiChart = genericChart(altiChartElement, getChartDatas(dataset, 'altitude'), getChartDatas(dataset, 'value'));
+/*OEB*/
+/*var altiChartElement = document.getElementById('altiChart');
+const altiChart = genericChart(altiChartElement, getChartDatas(dataset, 'altitude'), getChartDatas(dataset, 'value'));*/

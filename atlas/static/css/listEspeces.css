@@ -204,3 +204,11 @@ tbody tr.current {
       color: deeppink;
   }
 }
+
+/*ajouter par oeb */
+
+.panel-heading-oeb {
+    width : 97%!important;
+    margin-left: 10px!important;
+    text-align: center!important ;
+}

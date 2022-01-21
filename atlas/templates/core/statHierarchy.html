@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row mt-3">
             <div class="col-sm center border-right">
-                <i class="fas fa-search"></i>
+                <i class="fa fa-search"></i>
                 <br><strong>{{ listTaxons.nbObsTotal | pretty }}</strong>
                 <br>{{ _('observations')|lower if listTaxons.nbObsTotal > 1 else _('observation')|lower }}
             </div>
             <div class="col-sm center border-right">
-                <i class="fas fa-leaf"></i>
+                <i class="fa fa-leaf"></i>
                 <br><strong>{{ listTaxons.taxons|length | pretty }}</strong>
                 <br>{{ _('species')|lower if listTaxons.taxons|length > 1 else _('species')|lower }}
             </div>

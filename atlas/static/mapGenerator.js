@@ -60,6 +60,10 @@ function generateMap(zoomHomeButton) {
 
   // Add limits of the territory to the map
   $(document).ready(function () {
+    
+    // ajouter par oeb
+    map.attributionControl.setPrefix('<a  target="_blank" href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>');
+    
     $.getJSON(url_limit_territory, function (json) {
       const territoryGeoJson = L.geoJson(json, {
         style: territoryStyle,

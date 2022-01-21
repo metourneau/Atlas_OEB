@@ -67,7 +67,7 @@
                     <h5 class="mt-0 mb-1 ">
                         {% if DISPLAY_EYE_ON_LIST %}
                             <a data-toggle="tooltip"
-                               data-placement="right"><i class="fas fa-eye fa-fw"> </i></a>
+                               data-placement="right"><i class="fa fa-eye fa-fw"> </i></a>
                         {% endif %}
                         <strong>{% if taxon.nom_vern == None %}
                             -
@@ -85,7 +85,7 @@
                     <a class="badge badge-primary" href="{{ url_for('main.ficheEspece',cd_ref=taxon.cd_ref) }}"
                        data-toggle="tooltip"
                        title="{{ _('check.species.sheet') }}" data-placement="left">
-                        <i class="fas fa-list fa-fw"></i> {{ _('species.sheet') }}</i>
+                        <i class="fa fa-list fa-fw"></i> {{ _('species.sheet') }}</i>
                     </a>
                     </span>
 

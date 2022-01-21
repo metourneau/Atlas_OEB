@@ -76,13 +76,13 @@
                     <td>{{ taxon.last_obs|int }}</td>
                     {% if DISPLAY_EYE_ON_LIST %}
                         <td>
-                    <span class="fas fa-eye" data-toggle="tooltip"
+                    <span class="fa fa-eye" data-toggle="tooltip"
                           data-original-title={{ _('display.city.infos') }} data-placement="right"> </span>
                         </td>
                     {% endif %}
                     <td>
                         <a href="{{ url_for('main.ficheEspece',cd_ref=taxon.cd_ref) }}">
-                        <span class="fas fa-list" data-toggle="tooltip" data-original-title={{ _('check.species.sheet') }}
+                        <span class="fa fa-list" data-toggle="tooltip" data-original-title={{ _('check.species.sheet') }}
                               data-placement="left"> </span>
                         </a>
                     </td>

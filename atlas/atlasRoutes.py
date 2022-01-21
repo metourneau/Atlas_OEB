@@ -457,3 +457,12 @@ def robots():
     response.headers["Content-type"] = "text/plain"
 
     return response
+    
+#MET 04/09/2020 Lien vers les crédits et mentions légales
+@main.route("/credits", methods=["GET", "POST"])
+def credits():
+    return render_template("static/custom/templates/credits.html")
+
+@main.route("/mentions-legales", methods=["GET", "POST"])
+def mentionslegales():
+    return render_template("static/custom/templates/mentions-legales.html")

@@ -1,11 +1,11 @@
 {% block globalStats %}
 <div class="card mt-4">
     <div class="card-body">
-        <h3 class="card-title"><i class="fas fa-chart-line icon-color-title">&nbsp;</i> {{ _('home.insomefigures') }}</h3>
+        <h3 class="card-title"><i class="fa fa-chart-line icon-color-title">&nbsp;</i> {{ _('home.insomefigures') }}</h3>
         <div class="row">
             <div class="col-lg-3 col-md-6 col-xs-12 stat-object">
                 <div class="stat-thumbnail border-right">
-                    <i class="fas fa-search fa-3x blue"></i> <input id="hiddenInputTaxonStat" type="hidden"
+                    <i class="fa fa-search fa-3x blue"></i> <input id="hiddenInputTaxonStat" type="hidden"
                         name="cd_ref">
                     <h1 class="large text-muted">{{ stat.nbTotalObs | pretty }}</h1>
                     <h4 class="text-muted text-uppercase font-weight-bold">
@@ -15,14 +15,14 @@
             </div>
             <div class="col-lg-3 col-md-6 col-xs-12 stat-object">
                 <div class="stat-thumbnail border-right">
-                    <i class="fas fa-leaf fa-3x"></i>
+                    <i class="fa fa-leaf fa-3x"></i>
                     <h1 class="large text-muted">{{ stat.nbTotalTaxons | pretty }}</h1>
                     <h4 class="text-muted text-uppercase font-weight-bold">
                         {{ _('species') if stat.nbTotalTaxons > 1 else _('species') }}</h4>
                     <form method="POST" class="navbar-form" role="search">
                         <div class="form-group has-feedback center-input">
                             <span class="addon">
-                                <i class="fas fa-search"></i>
+                                <i class="fa fa-search"></i>
                             </span>
                             <input id="searchTaxonsStat" type="text" class="form-control"
                                 placeholder="{{ _('search.species') }}&nbsp; &nbsp; &nbsp;" loading="false" />
@@ -33,7 +33,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-xs-12 stat-object">
                 <div class="stat-thumbnail border-right">
-                    <i class="fas fa-map-signs fa-3x blue"></i>
+                    <i class="fa fa-map-signs fa-3x blue"></i>
                     <h1 class="large text-muted">{{ stat.town | pretty }}</h1>
                     <h4 class="text-muted  text-uppercase font-weight-bold">
                         {{ _('municipalities') if stat.town > 1 else _('municipality') }}</h4>
@@ -41,7 +41,7 @@
                         id='searchFormCommunesStat' action="" class="navbar-form center-input" role="search">
                         <div class="form-group has-feedback">
                             <span class="addon">
-                                <i class="fas fa-search" aria-hidden="true"></i>
+                                <i class="fa fa-search" aria-hidden="true"></i>
                             </span>
                             <input id="searchCommunesStat" type="text" class="form-control"
                                 placeholder="{{ _('search.city') }}&nbsp;&nbsp;&nbsp;">
@@ -52,7 +52,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-xs-12 stat-object">
                 <div class="stat-thumbnail">
-                    <i class="fas fa-camera fa-3x"></i>
+                    <i class="fa fa-camera fa-3x"></i>
                     <h1 class="large text-muted">{{ stat.photo | pretty }}</h1>
                     <h4 class="text-muted  text-uppercase font-weight-bold">
                         {{ _('photos') if stat.photo > 1 else _('photo') }}</h4>
